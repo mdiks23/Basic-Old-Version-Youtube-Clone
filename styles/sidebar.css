@@ -1,0 +1,35 @@
+.side{
+  background-color: white;
+  position: fixed ;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top:80px;
+  width: 80px;
+  z-index: 4;
+}
+
+
+.side-link{
+  height: 74px;
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+.side-link:hover{
+  background-color: #e1e0e0 ;
+}
+
+.side-link img{
+  height:24px;
+  margin-bottom:4px;
+}
+
+.side-font{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  
+}

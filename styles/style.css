@@ -1,0 +1,235 @@
+.search-bar{
+  display: block;
+  height: 56px;
+  flex: 1;
+  box-shadow: inset 1px 0.5px 0px gray;
+    border-color: gray;
+  border-style: solid;
+ font-size: 16px;
+  border-radius: 1px;
+  border-width: 1px;
+  transition: 2s;
+  width: 0;
+}
+body{
+  background-color: #ffffffdd;
+  font-family: Roboto, Arial;
+}
+.serb,.vb,.upb,.notif,.appb,.meb{
+  position: relative;
+  
+}
+.serb .tool-tip, .vb .tool-tip,.upb .tool-tip,.notif .tool-tip,.appb .tool-tip,.meb .tool-tip{
+  position:absolute;
+  background-color:  #ffffffc9;
+ border-radius: 2px;
+ padding-right: 8px;
+ padding-left: 8px;
+ padding-top: 3px;
+ padding-bottom: 3px;
+ bottom: -10px;
+ right: -10px;
+ font-size: 14px;
+ opacity: 0;
+ transition: 0.15s;
+ white-space: nowrap;
+}
+.serb:hover .tool-tip, .vb:hover .tool-tip,.upb:hover .tool-tip,.notif:hover .tool-tip,.appb:hover .tool-tip,.meb:hover .tool-tip{
+  opacity: 1;
+
+}
+.search-bar:hover{
+  background-color: lightblue;
+  color: white;
+  white-space: nowrap;
+}
+.search-bar::placeholder{
+ margin: 20px;
+ padding: 20px;
+}
+
+.th1{
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 3px;
+}
+.th{
+  position: relative;
+  z-index: 1;
+}
+.time{
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  bottom: 17px;
+  right: 7px;
+  font-family: roboto, arial;
+  font-weight: 500;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
+p{
+  width: 100%;
+  display: block;
+  margin-bottom: 7px;
+}
+.vedio-grid{
+  padding-left: 90px;
+  padding-top: 90px;
+}
+.post-time{
+  font-size: 9px;
+  color: gray;
+  margin-top: 0px;
+}
+.author{
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.tittle{
+  font-weight: bold;
+  font-size: 15px;
+}
+.container{
+  
+  vertical-align: top;
+
+  
+}
+.channel{
+
+
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+.channel-photo{
+  width: 47px;
+  height: 47px;
+  border-radius: 47px;
+  
+}
+.info{
+
+  padding-left: 12px;
+  vertical-align: top;
+}
+.channel-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.vedio-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 5px;
+}
+.not{
+  height: 24px;
+}
+.upload{
+  height: 24px;
+}
+.app{
+  height: 24px;
+}
+.me{
+  height: 34px;
+  width: 34px;
+  border-radius: 34px;
+}
+body{
+  height: 3000px;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    .gfg-div {
+        background-color: #63c971;
+        color: #fff;
+    }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+        color: black;
+    }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) {
+    .gfg-div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: #fff;
+    }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) 
+    and (orientation: landscape) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: cyan;
+        color: black;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen 
+    and (max-device-width: 640px) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: chartreuse;
+        color: black;
+    }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: brown;
+        color: black;
+    }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) 
+    and (device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: cornflowerblue;
+        color: black;
+    }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) 
+    and (min-device-width: 375px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: darkgoldenrod;
+        color: black;
+    }
+};
